@@ -1,0 +1,116 @@
+.card-checkboxes {
+  width: 325px;
+  height: 380px;
+  background: linear-gradient(
+    180deg,
+    $primary-dark-color 0%,
+    $secondary-color 100%
+  );
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2.5rem;
+  justify-content: center;
+  z-index: 0;
+  position: absolute;
+  bottom: 60px;
+  right: 80px;
+  text-transform: capitalize;
+  outline: 6px solid $secondary-light-color;
+
+  @include tablet {
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: transparent;
+    outline: none;
+    top: 120px;
+    left: 20px;
+    padding: 0;
+    width: 250px;
+    height: 280px;
+  }
+
+  @include phone {
+    left: 10px;
+    height: 250px;
+  }
+
+  @include small-phone {
+    width: 120px;
+    height: 350px;
+  }
+
+  span {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+
+    @include tablet {
+      box-shadow: 1px 2px 4px $primary-dark-color;
+    }
+
+    &:before {
+      position: absolute;
+      content: "";
+      height: 25px;
+      width: 25px;
+      right: 3px;
+      top: 2px;
+      background-color: $primary-color;
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+  }
+
+  .checkbox-wrap {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem 0;
+    align-items: center;
+
+    @include tablet {
+      padding: 8px;
+    }
+
+    .icon-img {
+      margin: 0 0.8rem 0 2.5rem;
+      padding: 0;
+
+      @include tablet {
+        margin: 0 0.5rem 0 1rem;
+        border: 1px solid rgba($primary-dark-color, 0.9);
+        border-radius: 50%;
+        background-color: rgba($primary-dark-color, 0.9);
+      }
+
+      @include phone {
+        margin: 10px;
+      }
+    }
+
+    &_text {
+      font-size: 1.2rem;
+
+      @include tablet {
+        padding: 8px 12px;
+        border-radius: 25px;
+        background-color: rgba($primary-dark-color, 0.9);
+      }
+
+      @include phone {
+        font-size: 0.8rem;
+        margin: 0;
+      }
+
+      @include small-phone {
+        display: none;
+      }
+    }
+  }
+}

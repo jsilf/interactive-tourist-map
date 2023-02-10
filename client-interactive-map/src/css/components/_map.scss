@@ -1,0 +1,16 @@
+.map {
+  width: 100%;
+  height: 100vh;
+
+  &-container {
+    width: 100%;
+    height: 100%;
+    background-color: $primary-dark-color;
+  }
+}
+
+/* Google maps bottom text */
+.gmnoprint,
+.gmoscreen {
+  display: none !important;
+}

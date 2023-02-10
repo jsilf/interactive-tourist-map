@@ -1,0 +1,35 @@
+header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 300px;
+  background: transparent;
+  transition: all ease 0.5s;
+
+  @include tablet {
+    height: 100px;
+  }
+
+  h1 {
+    position: absolute;
+    top: 15px;
+    left: 100px;
+    max-width: 300px;
+
+    @include tablet {
+      width: 250px;
+    }
+  }
+}
+
+.header-transparent {
+  background: transparent;
+}
+
+.header-background {
+  height: 130px;
+  width: 100%;
+  background-color: rgba($secondary-light-color, 0.9);
+}

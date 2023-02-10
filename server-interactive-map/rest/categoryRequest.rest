@@ -1,0 +1,83 @@
+GET https://interactive-map.onrender.com/category/api
+
+###
+
+GET http://localhost:5000/category/api
+
+###
+
+GET http://localhost:5000/category/api/badplats
+
+###
+
+POST http://localhost:5000/category/api/add
+Content-Type: application/json
+
+{
+    "category": "badplats",
+     "pins": ["63bd6d4ff711b3cc20ca3610"]
+}
+
+###
+POST http://localhost:5000/category/api/add
+Content-Type: application/json
+
+{
+    "_id": "63c2ec881e20edb4d9b4a30c"
+    "category": "restaurang",
+    "pins": ["63bd6da5f711b3cc20ca3616"]
+}
+
+###
+
+POST http://localhost:5000/category/api/add
+Content-Type: application/json
+
+{
+    "category": "vandring",
+    "pins": ["63c17e8eee3a84ef589c83e9"]
+}
+
+###
+
+POST http://localhost:5000/category/api/add
+Content-Type: application/json
+
+{
+    "category": "sevärdhet",
+    "pins": ["63bd6e08f711b3cc20ca361b"]
+}
+
+###
+
+POST http://localhost:5000/category/api/add
+Content-Type: application/json
+
+{
+    "category": "butik",
+    "pins": ["63bd6e2af711b3cc20ca361d", "63bd6e40f711b3cc20ca361f"]
+}
+
+###
+
+PUT http://localhost:5000/category/api/update
+Content-Type: application/json
+
+{
+    "category": "restaurang",
+        "pins": {
+        "category": "restaurang",
+        "lat": 58.18275,
+        "long": 11.39341,
+        "color":"red",
+        "name":"xxx",
+        "information":"lorem ipsum"
+    }
+}
+
+###
+
+DELETE http://localhost:5000/category/api/delete/63c318aaccbfbd74e57defe0
+
+
+###

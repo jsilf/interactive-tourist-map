@@ -1,0 +1,97 @@
+GET https://interactive-map.onrender.com/pins/api
+
+###
+
+GET http://localhost:5000/pins/api
+###
+
+GET http://localhost:5000/pins/api/63bd6cd7f711b3cc20ca3607
+###
+
+POST http://localhost:5000/pins/api/add
+Content-Type: application/json
+
+{
+    "category": "badplats",
+    "lat": 58,
+    "long": 11,
+    "color":"blue",
+    "name":"Lorem",
+    "information":"Lorem ipsum"
+}
+
+###
+POST http://localhost:5000/pins/api/add
+Content-Type: application/json
+
+{
+    "category": "restaurang",
+    "lat": 58.17927,
+    "long": 11.40388,
+    "color":"red",
+    "name":"Lorem",
+    "information":"lorem ipsum"
+}
+
+###
+
+POST http://localhost:5000/pins/api/add
+Content-Type: application/json
+
+{
+    "category": "vandring",
+    "lat": 58.17142,
+    "long": 11.39602,
+    "color":"yellow",
+    "name":"Lorem",
+    "information":"lorem ipsum"
+}
+
+###
+
+POST http://localhost:5000/pins/api/add
+Content-Type: application/json
+
+{
+    "category": "sevärdhet",
+    "lat": 58.14681,
+    "long": 11.36683,
+    "color":"green",
+    "name":"Skålldalen",
+    "information":"Naturskön dal med ängsmark och skog på vägen mot Härmanö huvud. Ruiner efter bebyggelse från 1800-talet."
+}
+
+###
+
+POST http://localhost:5000/pins/api/add
+Content-Type: application/json
+
+{
+    "category": "butik",
+    "lat": 58.17848,
+    "long": 11.40170,
+    "color":"purple",
+    "name":"Lorem",
+    "information":"lorem ipsum"
+}
+
+###
+
+PUT http://localhost:5000/pins/api/update
+Content-Type: application/json
+
+{
+    "category": "restaurang",
+    "lat": 58.17444,
+    "long": 11.40036,
+    "color":"red",
+    "name":"Lorem",
+    "information":"lorem ipsum"
+}
+
+###
+
+DELETE http://localhost:5000/pins/api/delete/62868138357d7bc6956fc063
+
+
+###

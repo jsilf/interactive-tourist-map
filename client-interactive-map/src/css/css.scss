@@ -1,0 +1,18 @@
+@import "./default/variables";
+@import "./default/_mediaqueries";
+@import "./default/_typography";
+@import "./default/_default";
+@import "./default/_animations";
+
+@import "./components/_links";
+@import "./components/_swiper";
+@import "./components/_checkbox-card";
+@import "./components/_text-card";
+@import "./components/_map";
+
+@import "./sections/_header";
+@import "./sections/_footer";
+
+@import "./pages/_about";
+@import "./pages/_list-of-points";
+@import "./pages/_contact";

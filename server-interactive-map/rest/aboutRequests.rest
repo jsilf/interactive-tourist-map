@@ -1,0 +1,18 @@
+GET https://interactive-map.onrender.com/about/api
+
+###
+
+GET http://localhost:5000/about/api
+
+###
+
+POST http://localhost:5000/about/api/add
+Content-Type: application/json
+
+{
+    "title": "Om Gullholmen",
+    "text": "coffee ipsum",
+    "image": "example.jpg"
+}
+
+###

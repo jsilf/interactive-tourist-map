@@ -1,0 +1,13 @@
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: $primary-light-color;
+  padding: 3rem 0;
+
+  .footer-text,
+  a {
+    font-size: 14px;
+  }
+}

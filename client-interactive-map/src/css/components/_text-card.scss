@@ -1,0 +1,74 @@
+.text-card {
+  display: flex;
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  left: 80px;
+  max-width: 380px;
+  width: 380px;
+  max-height: 300px;
+  border-radius: 32px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: $primary-color;
+  outline: 6px solid $primary-light-color;
+
+  @include tablet {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 350px;
+  }
+
+  @include phone {
+    max-width: 250px;
+    max-height: 220px;
+    padding: 1rem;
+  }
+
+  .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 11px;
+      width: 4px;
+      height: 30px;
+      background-color: white;
+      border-radius: 50px;
+    }
+
+    &:before {
+      transform: rotate(-45deg);
+    }
+
+    &:after {
+      transform: rotate(45deg);
+    }
+  }
+
+  &_title {
+    margin-bottom: 1rem;
+    max-width: 280px;
+
+    @include tablet {
+      font-size: $font-small;
+      max-width: 210px;
+    }
+  }
+  &_text {
+    @include tablet {
+      font-size: 1rem;
+    }
+  }
+}

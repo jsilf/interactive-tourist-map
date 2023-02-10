@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "LatoThin";
+  src: local("LatoThin"), url("./fonts/Lato/Lato-Thin.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: local("PlayfairDisplay"),
+    url("./fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf")
+      format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}

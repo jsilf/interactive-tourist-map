@@ -1,0 +1,25 @@
+.contact {
+  margin-top: 100px;
+
+  &-list {
+    @include tablet {
+      padding-bottom: 4rem;
+    }
+
+    &_title {
+      margin-bottom: 1rem;
+    }
+
+    &_subtitle {
+      margin: 3rem 0 1rem 0;
+    }
+
+    ul {
+      list-style-type: circle;
+
+      li {
+        line-height: 1.9;
+      }
+    }
+  }
+}
