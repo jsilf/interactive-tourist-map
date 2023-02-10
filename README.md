@@ -4,6 +4,8 @@ An interactive map and tourist guide of an island in Bohuslän, Sweden.
 
 You can find the site here: https://gullholmengo.se
 
+(This is a copy of the original repository)
+
 ## Logo
 
 ![Logo](https://user-images.githubusercontent.com/92667872/216095083-b00fad9f-74b3-4ac3-b25e-3bbfd34ed007.png)
